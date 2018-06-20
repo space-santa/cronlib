@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CronLib", "CronLib\CronLib.csproj", "{08C74A69-08D0-42A0-BC6E-3BCA977D2449}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCron", "TestCron\TestCron.csproj", "{677598D4-641F-4000-BE6B-B5BDEA9A2EC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08C74A69-08D0-42A0-BC6E-3BCA977D2449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08C74A69-08D0-42A0-BC6E-3BCA977D2449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08C74A69-08D0-42A0-BC6E-3BCA977D2449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08C74A69-08D0-42A0-BC6E-3BCA977D2449}.Release|Any CPU.Build.0 = Release|Any CPU
+		{677598D4-641F-4000-BE6B-B5BDEA9A2EC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{677598D4-641F-4000-BE6B-B5BDEA9A2EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{677598D4-641F-4000-BE6B-B5BDEA9A2EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{677598D4-641F-4000-BE6B-B5BDEA9A2EC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3559B753-2B70-4F0A-8923-C7154E053822}
+	EndGlobalSection
+EndGlobal

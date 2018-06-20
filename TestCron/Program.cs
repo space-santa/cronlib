@@ -45,18 +45,16 @@ namespace TestCron
 
                 // Trigger the job to run now, and then repeat every 10 seconds
                 ITrigger trigger = TriggerBuilder.Create()
-                    .WithIdentity("trigger1", "group1")
-                    .StartNow()
-                    .WithSimpleSchedule(x => x
-                        .WithIntervalInSeconds(10)
-                        .RepeatForever())
+                    .WithIdentity("trigger3", "group1")
+                    .WithCronSchedule("0 0/2 8-23 * * ?")
+                    .ForJob("job1", "group1")
                     .Build();
 
                 // Tell quartz to schedule the job using our trigger
                 await scheduler.ScheduleJob(job, trigger);
 
                 // some sleep to show what's happening
-                await Task.Delay(TimeSpan.FromSeconds(60));
+                await Task.Delay(TimeSpan.FromSeconds(300));
 
                 // and last shut down the scheduler when you are ready to close your program
                 await scheduler.Shutdown();

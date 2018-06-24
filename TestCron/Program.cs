@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-using Quartz;
 using CronLib;
 
 namespace TestCron
 {
-    public class HelloJob : IJob
+    public class HelloJob : CronJob
     {
-        public async Task Execute(IJobExecutionContext context)
+        protected override async Task Functionality()
         {
             await Console.Out.WriteLineAsync("Greetings from HelloJob!");
         }
@@ -18,7 +17,7 @@ namespace TestCron
     {
         static void Main(string[] args)
         {
-            CronJob<HelloJob>.Run().GetAwaiter().GetResult();
+            CronRunner<HelloJob>.Run("0/5 0/1 8-23 * * ?").GetAwaiter().GetResult();
         }
     }
 }
